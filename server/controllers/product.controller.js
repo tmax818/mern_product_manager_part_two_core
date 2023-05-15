@@ -14,7 +14,7 @@ module.exports.createProduct = (req, res) => {
         .catch(err => res.json(err));
 }
 // add in list and detail
-module.exports.getAllPeople = (req, res) => {
+module.exports.getProducts = (req, res) => {
     Product.find({})
         .then(products => res.json(products))
         .catch(err => res.json(err))
